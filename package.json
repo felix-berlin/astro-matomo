@@ -47,7 +47,9 @@
 		"demo"
 	],
 	"devDependencies": {
-		"astro": "^2.0.15"
+		"@semantic-release/changelog": "^6.0.2",
+		"@semantic-release/git": "^10.0.1",
+		"semantic-release": "^20.1.0"
 	},
 	"peerDependencies": {
 		"astro": "^2.0.0-beta.0"
