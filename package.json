@@ -3,16 +3,19 @@
 	"version": "0.0.1",
 	"type": "module",
 	"exports": {
-		".": "./index.ts"
+		".": "./src/index.ts",
+		"./matomo.ts": "./src/matomo.ts"
 	},
 	"files": [
-		"src",
-		"index.ts"
+		"src"
 	],
 	"keywords": [
 		"astro-component"
 	],
 	"scripts": {},
+	"workspaces": [
+		"demo"
+	],
 	"devDependencies": {
 		"astro": "^2.0.15"
 	},
