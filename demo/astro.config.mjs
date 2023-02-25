@@ -6,7 +6,7 @@ export default defineConfig({
   site: "https://example.com",
   integrations: [
     matomo({
-      enabled: false,
+      enabled: true,
       host: "https://analytics.webshaped.de/",
       siteId: 9,
       debug: true,
