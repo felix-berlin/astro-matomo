@@ -1,6 +1,11 @@
 import type {MatomoOptions} from "./index.js";
 
 export function initMatomo(options: MatomoOptions) {
+  if (!options.enabled) {
+    console.warn('Matomo is disabled!');
+    return;
+  }
+
   const _paq = (window._paq = window._paq || []);
 
   /* tracker methods like "setCustomDimension" should be called before "trackPageView" */

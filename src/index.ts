@@ -1,6 +1,7 @@
-import type { AstroConfig, AstroIntegration } from 'astro';
+import type { AstroIntegration } from 'astro';
 
 export type MatomoOptions = {
+  enabled: boolean,
   host: string,
   siteId: number,
   cookieDomain?: string,
@@ -10,12 +11,10 @@ export type MatomoOptions = {
 }
 
 export default function createPlugin(options: MatomoOptions): AstroIntegration {
-  let config: AstroConfig;
-
   return {
     name: 'astro-matomo',
     hooks: {
-      'astro:config:setup': ({ config, injectScript }) => {
+      'astro:config:setup': ({ injectScript }) => {
         injectScript(
           "page",
           `import {initMatomo} from 'astro-matomo/matomo.ts'; initMatomo(${JSON.stringify(options)});`
