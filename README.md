@@ -1,5 +1,17 @@
 # Astro Matomo
 
+## Installation
+
+```bash
+npm install astro-matomo
+```
+
+Or via [Automatic Integration Setup](https://docs.astro.build/en/guides/integrations-guide/#automatic-integration-setup):
+
+```bash
+npx astro add astro-matomo
+```
+
 ## Options
 
 | Options        | Type      | Description                                    |
@@ -21,15 +33,15 @@ import matomo from 'astro-matomo';
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://example.com",
+  site: "https://example.lol",
   integrations: [
     matomo({
-      enabled: true,
+      enabled: import.meta.env.PROD, // Only load in production
       host: "https://analytics.example.lol/",
       siteId: 666,
       heartBeatTimer: 5,
       disableCookies: true,
-      debug: true,
+      debug: false,
     }),
   ]
 });
