@@ -1,6 +1,7 @@
 {
 	"name": "astro-matomo",
 	"version": "0.0.1",
+	"description": "Matomo integration for Astro",
 	"type": "module",
 	"exports": {
 		".": "./src/index.ts",
@@ -10,9 +11,38 @@
 		"src"
 	],
 	"keywords": [
-		"astro-component"
+		"astro-integration",
+		"matomo",
+		"analytics",
+		"tracking"
 	],
-	"scripts": {},
+	"author": {
+		"name": "Felix Scholze",
+		"email": "felix@webshaped.de",
+		"url": "https://webshaped.de"
+	},
+	"homepage": "https://github.com/felix-berlin/astro-matomo",
+	"funding": [
+		{
+			"type": "PayPal",
+			"url": "https://paypal.me/FelixScholze"
+		},
+		{
+			"type": "Buy me a coffee",
+			"url": "https://www.buymeacoffee.com/felixberlin"
+		}
+	],
+	"license": "GPL-3.0",
+	"bugs": {
+		"url": "https://github.com/felix-berlin/astro-matomo/issues"
+	},
+	"scripts": {
+		"release": "semantic-release --branches main"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/felix-berlin/astro-matomo.git"
+	},
 	"workspaces": [
 		"demo"
 	],
