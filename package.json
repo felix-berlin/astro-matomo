@@ -1,6 +1,6 @@
 {
 	"name": "astro-matomo",
-	"version": "0.0.1",
+	"version": "1.0.0",
 	"description": "Matomo integration for Astro",
 	"type": "module",
 	"exports": {
