@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.1.0](https://github.com/felix-berlin/astro-matomo/compare/v1.0.0...v1.1.0) (2023-02-25)
+
+
+### Features
+
+* enabled set to false will not output any js file; remove cookieDomain option ([9bcdb52](https://github.com/felix-berlin/astro-matomo/commit/9bcdb52a3271e863bf4aa54a9e217dcc11dc11f7))
+
 # 1.0.0 (2023-02-25)
 
 
