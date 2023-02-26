@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.2.0](https://github.com/felix-berlin/astro-matomo/compare/v1.1.0...v1.2.0) (2023-02-26)
+
+
+### Features
+
+* new option preconnect ([83278cd](https://github.com/felix-berlin/astro-matomo/commit/83278cd933ca548e7f19042bca2edd381e310e49))
+
 # [1.1.0](https://github.com/felix-berlin/astro-matomo/compare/v1.0.0...v1.1.0) (2023-02-25)
 
 
