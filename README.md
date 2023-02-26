@@ -1,5 +1,10 @@
 # Astro Matomo
 
+![npm](https://img.shields.io/npm/dm/astro-matomo?logo=npm&style=flat-square)
+![npm](https://img.shields.io/npm/v/astro-matomo?logo=npm&style=flat-square)
+![GitHub package.json version](https://img.shields.io/github/package-json/v/felix-berlin/astro-matomo?label=github&logo=github&style=flat-square)
+![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/felix-berlin/astro-matomo/release.yml?label=release&logo=github&style=flat-square)
+
 ## Installation
 
 ```bash
