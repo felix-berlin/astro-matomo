@@ -11,7 +11,7 @@ export default defineConfig({
       siteId: 9,
       debug: true,
       heartBeatTimer: 5,
+      preconnect: true,
     }),
   ]
-
 });

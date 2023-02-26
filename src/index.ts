@@ -6,11 +6,14 @@ export type MatomoOptions = | {
   siteId: number,
   heartBeatTimer?: number,
   disableCookies?: boolean,
+  preconnect?: boolean,
   debug?: boolean
 } | undefined;
 
 export default function createPlugin(options: MatomoOptions): AstroIntegration {
-  let script = `import {initMatomo} from 'astro-matomo/matomo.ts'; initMatomo(${JSON.stringify(options)});`
+  let script = `import {initMatomo, preconnectMatomo} from 'astro-matomo/matomo.ts'; initMatomo(${JSON.stringify(options)});`
+
+  if (options?.preconnect) script += `preconnectMatomo(${JSON.stringify(options)});`
 
   if (!options?.enabled) {
     console.warn('Matomo is disabled!');

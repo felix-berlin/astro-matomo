@@ -1,6 +1,13 @@
 import type {MatomoOptions} from "./index.js";
 
-export function initMatomo(options: MatomoOptions) {
+/**
+ * Init Matomo
+ *
+ * @param   {MatomoOptions}  options
+ *
+ * @return  {void}
+ */
+export function initMatomo(options: MatomoOptions):void {
   const _paq = (window._paq = window._paq || []);
 
   /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
@@ -33,3 +40,19 @@ export function initMatomo(options: MatomoOptions) {
     if (s.parentNode != null && u) s.parentNode.insertBefore(g, s);
   })();
 };
+
+/**
+ * Generate a preconnect link for the Matomo host
+ *
+ * @param   {MatomoOptions}  options
+ *
+ * @return  {void}
+ */
+export function preconnectMatomo(options: MatomoOptions):void  {
+  if (!options?.host) return;
+
+  const link = document.createElement('link');
+  link.rel = 'preconnect';
+  link.href = options?.host;
+  document.head.appendChild(link);
+}

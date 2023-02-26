@@ -7,10 +7,14 @@
 		".": "./src/index.ts",
 		"./matomo.ts": "./src/matomo.ts"
 	},
+	"main": "src/index.ts",
 	"files": [
 		"src"
 	],
 	"keywords": [
+		"astro",
+		"astro.js",
+		"withastro",
 		"astro-integration",
 		"matomo",
 		"analytics",
