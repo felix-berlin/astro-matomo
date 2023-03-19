@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.1](https://github.com/felix-berlin/astro-matomo/compare/v1.2.0...v1.2.1) (2023-03-19)
+
+
+### Bug Fixes
+
+* **deps:** update dependency astro to v2.1.3 ([e99ab5a](https://github.com/felix-berlin/astro-matomo/commit/e99ab5a418f98f165e6aefac22e35f2c479c9ef3))
+
 # [1.2.0](https://github.com/felix-berlin/astro-matomo/compare/v1.1.0...v1.2.0) (2023-02-26)
 
 
