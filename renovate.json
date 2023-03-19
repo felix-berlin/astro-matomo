@@ -1,9 +1,14 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "config:base"
+    "config:base",
+    ":semanticCommitTypeAll(chore)"
   ],
-  "reviewers": ["felix-berlin"],
+  "reviewers": [
+    "felix-berlin"
+  ],
   "timezone": "Europe/Berlin",
-  "schedule": ["on friday and saturday"]
+  "schedule": [
+    "on friday and saturday"
+  ]
 }
