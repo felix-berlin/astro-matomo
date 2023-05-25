@@ -4,7 +4,10 @@ export type MatomoOptions = | {
   enabled: boolean,
   host: string,
   siteId: number,
+  trackerUrl?: string,
+  srcUrl?: string,
   heartBeatTimer?: number,
+  setCookieDomain?: string,
   disableCookies?: boolean,
   preconnect?: boolean,
   debug?: boolean

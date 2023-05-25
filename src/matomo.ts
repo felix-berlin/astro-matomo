@@ -13,6 +13,8 @@ export function initMatomo(options: MatomoOptions):void {
   /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
   if (options?.disableCookies) _paq.push(['disableCookies']);
   if (options?.heartBeatTimer) _paq.push(['enableHeartBeatTimer', options.heartBeatTimer]);
+  if (options?.setCookieDomain) _paq.push(['setCookieDomain', options.setCookieDomain]);
+
   _paq.push(['trackPageView']);
   _paq.push(['enableLinkTracking']);
 
@@ -25,7 +27,7 @@ export function initMatomo(options: MatomoOptions):void {
   (function() {
     const u = options?.host;
 
-    _paq.push(['setTrackerUrl', u + 'matomo.php']);
+    _paq.push(['setTrackerUrl', u + options?.trackerUrl || 'matomo.php']);
     _paq.push(['setSiteId', options?.siteId]);
 
     const d = document,
@@ -36,7 +38,7 @@ export function initMatomo(options: MatomoOptions):void {
     g.type = 'text/javascript';
     g.async = true;
     g.defer = true;
-    g.src = u + 'matomo.js';
+    g.src = u +  options?.srcUrl || 'matomo.js';
     if (s.parentNode != null && u) s.parentNode.insertBefore(g, s);
   })();
 };
