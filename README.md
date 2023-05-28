@@ -19,15 +19,18 @@ npx astro add astro-matomo
 
 ## Options
 
-| Options        | Type      | Description                                               |
-| -------------- | --------- | --------------------------------------------------------- |
-| enabled        | `boolean` | Controls if the matomo script should be loaded            |
-| host           | `string`  | Url to your matomo installation                           |
-| siteId         | `number`  | Matomo site id.                                           |
-| heartBeatTimer | `number`  | If set the heart beat time will be enabled                |
-| disableCookies | `boolean` | If set cookies will be disabled                           |
-| preconnect     | `boolean` | Will create a preconnect link pointing to the matomo host |
-| debug          | `boolean` | Activate debug mode                                       |
+| Options            | Type      | Description                                               |
+| ------------------ | --------- | --------------------------------------------------------- |
+| `enabled`          | `boolean` | Controls if the matomo script should be loaded            |
+| `host`             | `string`  | Url to your matomo installation                           |
+| `siteId`           | `number`  | Matomo site id.                                           |
+| `heartBeatTimer?`  | `number`  | If set the heart beat timer will be enabled               |
+| `disableCookies?`  | `boolean` | If set cookies will be disabled                           |
+| `preconnect?`      | `boolean` | Will create a preconnect link pointing to the matomo host |
+| `setCookieDomain?` | `string`  | Share the tracking cookie across multiple domains         |
+| `trackerUrl?`      | `string`  | Defaults to matomo.php                                    |
+| `srcUrl?`          | `string`  | Defaults to matomo.js                                     |
+| `debug?`           | `boolean` | Activate debug mode                                       |
 
 ## Example usage
 
