@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.3.0](https://github.com/felix-berlin/astro-matomo/compare/v1.2.1...v1.3.0) (2023-05-28)
+
+
+### Bug Fixes
+
+* trackerUrl and srcUrl not defined ([69e1d86](https://github.com/felix-berlin/astro-matomo/commit/69e1d86c90736429a86bb74f1c6952cf0a59a102))
+
+
+### Features
+
+* add setCookieDomain, trackerUrl, srcUrl options ([a9c05c4](https://github.com/felix-berlin/astro-matomo/commit/a9c05c488d5c319ccd8f39e2bfb2b8dfdb5b7c8e))
+
 ## [1.2.1](https://github.com/felix-berlin/astro-matomo/compare/v1.2.0...v1.2.1) (2023-03-19)
 
 

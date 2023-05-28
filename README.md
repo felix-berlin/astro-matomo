@@ -47,6 +47,9 @@ export default defineConfig({
     matomo({
       enabled: import.meta.env.PROD, // Only load in production
       host: "https://analytics.example.lol/",
+      setCookieDomain: "*.example.lol",
+      trackerUrl: "js/", // defaults to matomo.php
+      srcUrl: "js/", // defaults to matomo.js
       siteId: 666,
       heartBeatTimer: 5,
       disableCookies: true,
