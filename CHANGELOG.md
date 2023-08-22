@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.3.1](https://github.com/felix-berlin/astro-matomo/compare/v1.3.0...v1.3.1) (2023-08-22)
+
+
+### Bug Fixes
+
+* color the disable massage ([1bb90a8](https://github.com/felix-berlin/astro-matomo/commit/1bb90a84ddc6162269f8df70dc1d939e7617e370))
+
+# Changelog
+
+All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
 # [1.3.0](https://github.com/felix-berlin/astro-matomo/compare/v1.2.1...v1.3.0) (2023-05-28)
 
 
