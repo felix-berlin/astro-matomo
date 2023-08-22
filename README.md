@@ -15,12 +15,6 @@ npm install astro-matomo
 yarn add astro-matomo
 ```
 
-Or via [Automatic Integration Setup](https://docs.astro.build/en/guides/integrations-guide/#automatic-integration-setup):
-
-```bash
-npx astro add astro-matomo
-```
-
 ## Options
 
 | Options            | Type      | Description                                               |
