@@ -1,5 +1,5 @@
-import { defineConfig } from 'astro/config';
-import matomo from 'astro-matomo';
+import { defineConfig } from "astro/config";
+import matomo from "astro-matomo";
 
 // https://astro.build/config
 export default defineConfig({
@@ -14,5 +14,5 @@ export default defineConfig({
       heartBeatTimer: 5,
       preconnect: true,
     }),
-  ]
+  ],
 });

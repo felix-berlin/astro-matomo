@@ -8,7 +8,11 @@
 ## Installation
 
 ```bash
+pnpm add astro-matomo
+
 npm install astro-matomo
+
+yarn add astro-matomo
 ```
 
 Or via [Automatic Integration Setup](https://docs.astro.build/en/guides/integrations-guide/#automatic-integration-setup):
@@ -65,17 +69,23 @@ export default defineConfig({
 Make the package available in your local environment:
 
 ```bash
+pnpm link .
+
 npm link
 ```
 
 Go to the demo project and link the package:
 
 ```bash
+pnpm link astro-matomo
+
 npm link astro-matomo
 ```
 
 Start the dev server:
 
 ```bash
+pnpm run dev
+
 npm run dev
 ```
