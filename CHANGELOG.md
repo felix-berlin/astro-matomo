@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.4.1](https://github.com/felix-berlin/astro-matomo/compare/v1.4.0...v1.4.1) (2023-12-06)
+
+
+### Bug Fixes
+
+* make sure astro matomo works with astro v4 ([0ca5469](https://github.com/felix-berlin/astro-matomo/commit/0ca546958aa195dddf271c3ff994adebf3950ed8))
+
 # [1.4.0](https://github.com/felix-berlin/astro-matomo/compare/v1.3.1...v1.4.0) (2023-08-30)
 
 
