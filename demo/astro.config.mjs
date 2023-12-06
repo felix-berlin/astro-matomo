@@ -3,7 +3,7 @@ import matomo from "astro-matomo";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "http://localhost:3000",
+  site: "http://localhost:4321",
   integrations: [
     matomo({
       enabled: true,
