@@ -41,7 +41,7 @@
     "url": "https://github.com/felix-berlin/astro-matomo/issues"
   },
   "scripts": {
-    "release": "semantic-release --branches main",
+    "release": "semantic-release --branches main"
   },
   "repository": {
     "type": "git",
