@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.4.2](https://github.com/felix-berlin/astro-matomo/compare/v1.4.1...v1.4.2) (2024-01-28)
+
+
+### Bug Fixes
+
+* json syntax error ([cf52ee8](https://github.com/felix-berlin/astro-matomo/commit/cf52ee8d1f0dd2d7630eed76e29185b0da9f7b0d))
+* pnpm is no longer enforced ([6c84410](https://github.com/felix-berlin/astro-matomo/commit/6c8441026a7cdd9f86a34cb6c1d5d74d89ac901a))
+
 ## [1.4.1](https://github.com/felix-berlin/astro-matomo/compare/v1.4.0...v1.4.1) (2023-12-06)
 
 
