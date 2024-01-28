@@ -42,7 +42,6 @@
   },
   "scripts": {
     "release": "semantic-release --branches main",
-    "preinstall": "npx only-allow pnpm"
   },
   "repository": {
     "type": "git",
