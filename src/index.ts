@@ -12,6 +12,7 @@ export type MatomoOptions =
       disableCookies?: boolean;
       preconnect?: boolean;
       debug?: boolean;
+      partytown?: boolean;
     }
   | undefined;
 

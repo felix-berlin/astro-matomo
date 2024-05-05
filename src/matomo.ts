@@ -37,7 +37,7 @@ export function initMatomo(options: MatomoOptions): void {
       s = d.getElementsByTagName("script")[0];
 
     g.id = "matomo-script";
-    g.type = "text/javascript";
+    g.type = `text/${options?.partytown ? "partytown" : "javascript"}`;
     g.async = true;
     g.defer = true;
     g.src = u + (options?.srcUrl || "matomo.js");
