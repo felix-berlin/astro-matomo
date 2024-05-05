@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.5.0](https://github.com/felix-berlin/astro-matomo/compare/v1.4.2...v1.5.0) (2024-05-05)
+
+
+### Features
+
+* add partytown integration ([8c883fd](https://github.com/felix-berlin/astro-matomo/commit/8c883fd290452af57fe8fc82c3de266109f0b738))
+
 ## [1.4.2](https://github.com/felix-berlin/astro-matomo/compare/v1.4.1...v1.4.2) (2024-01-28)
 
 
