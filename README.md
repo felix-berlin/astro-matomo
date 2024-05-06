@@ -29,7 +29,7 @@ yarn add astro-matomo
 | `trackerUrl?`      | `string`  | Defaults to matomo.php                                    |
 | `srcUrl?`          | `string`  | Defaults to matomo.js                                     |
 | `debug?`           | `boolean` | Activate debug mode                                       |
-| `partytown?`       | `boolean` | Activate [Partytown](https://partytown.builder.io/)       |
+| `partytown?`       | `boolean` | Adds [Partytown](https://partytown.builder.io/) support. Matomo added as: `<script type="text/partytown">...</script>`       |
 
 ## Example usage
 
