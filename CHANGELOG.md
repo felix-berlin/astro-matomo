@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.6.0](https://github.com/felix-berlin/astro-matomo/compare/v1.5.0...v1.6.0) (2024-05-16)
+
+
+### Features
+
+* add crossorigin support ([32dd133](https://github.com/felix-berlin/astro-matomo/commit/32dd1335a5f87145ab9d67cbd6d70ba84975c27a))
+
 # [1.5.0](https://github.com/felix-berlin/astro-matomo/compare/v1.4.2...v1.5.0) (2024-05-05)
 
 
