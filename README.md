@@ -30,6 +30,7 @@ yarn add astro-matomo
 | `srcUrl?`          | `string`  | Defaults to matomo.js                                     |
 | `debug?`           | `boolean` | Activate debug mode                                       |
 | `partytown?`       | `boolean` | Adds [Partytown](https://partytown.builder.io/) support. Matomo added as: `<script type="text/partytown">...</script>`       |
+| `crossOrigin?`     | `string`  | Set `crossorigin` attribute                               |
 
 ## Example usage
 

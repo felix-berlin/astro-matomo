@@ -36,6 +36,8 @@ export function initMatomo(options: MatomoOptions): void {
       g = d.createElement("script"),
       s = d.getElementsByTagName("script")[0];
 
+    if (options?.crossOrigin) g.crossOrigin = options.crossOrigin;
+
     g.id = "matomo-script";
     g.type = `text/${options?.partytown ? "partytown" : "javascript"}`;
     g.async = true;
