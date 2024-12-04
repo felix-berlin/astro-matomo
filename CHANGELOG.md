@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.7.0](https://github.com/felix-berlin/astro-matomo/compare/v1.6.0...v1.7.0) (2024-12-04)
+
+
+### Features
+
+* **support:** add astro v5 support ([03b6133](https://github.com/felix-berlin/astro-matomo/commit/03b61338780741e5e9cd189052c8b877d03b00f1))
+
 # [1.6.0](https://github.com/felix-berlin/astro-matomo/compare/v1.5.0...v1.6.0) (2024-05-16)
 
 
