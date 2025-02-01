@@ -3,7 +3,7 @@ import Layout from "../layouts/Layout.astro";
 import Card from "../components/Card.astro";
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title="Page 1">
   <main>
     <h1>Welcome to <span class="text-gradient">Astro</span></h1>
     <p class="instructions">
@@ -13,18 +13,18 @@ import Card from "../components/Card.astro";
     </p>
     <ul role="list" class="link-card-grid">
       <Card
-        href="/page-1"
-        title="Page 1"
-        body="Learn how Astro works and explore the official API docs."
-      />
-      <Card
         href="/page-2"
         title="Page 2"
-        body="Supercharge your project with new frameworks and libraries."
+        body="Learn how Astro works and explore the official API docs."
       />
       <Card
         href="/"
         title="Index"
+        body="Explore a galaxy of community-built starter themes."
+      />
+      <Card
+        href="https://astro.build/themes/"
+        title="Themes"
         body="Explore a galaxy of community-built starter themes."
       />
       <Card
