@@ -13,6 +13,7 @@ export type MatomoOptions =
       preconnect?: boolean;
       debug?: boolean;
       partytown?: boolean;
+      viewTransition?: boolean | { contentElement: string };
     }
   | undefined;
 
