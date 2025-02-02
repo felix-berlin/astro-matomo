@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.8.0](https://github.com/felix-berlin/astro-matomo/compare/v1.7.0...v1.8.0) (2025-02-02)
+
+
+### Features
+
+* **spa mode:** add support for single page apps / progressive web apps ([849aa90](https://github.com/felix-berlin/astro-matomo/commit/849aa9072fffa3e8cf588b3baf638959723219cb))
+
 # [1.7.0](https://github.com/felix-berlin/astro-matomo/compare/v1.6.0...v1.7.0) (2024-12-04)
 
 
