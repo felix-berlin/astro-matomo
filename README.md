@@ -17,20 +17,21 @@ yarn add astro-matomo
 
 ## Options
 
-| Options            | Type      | Description                                               |
-| ------------------ | --------- | --------------------------------------------------------- |
-| `enabled`          | `boolean` | Controls if the matomo script should be loaded            |
-| `host`             | `string`  | Url to your matomo installation                           |
-| `siteId`           | `number`  | Matomo site id.                                           |
-| `heartBeatTimer?`  | `number`  | If set the heart beat timer will be enabled               |
-| `disableCookies?`  | `boolean` | If set cookies will be disabled                           |
-| `preconnect?`      | `boolean` | Will create a preconnect link pointing to the matomo host |
-| `setCookieDomain?` | `string`  | Share the tracking cookie across multiple domains         |
-| `trackerUrl?`      | `string`  | Defaults to matomo.php                                    |
-| `srcUrl?`          | `string`  | Defaults to matomo.js                                     |
-| `debug?`           | `boolean` | Activate debug mode                                       |
-| `partytown?`       | `boolean` | Adds [Partytown](https://partytown.builder.io/) support. Matomo added as: `<script type="text/partytown">...</script>`       |
-| `crossOrigin?`     | `string`  | Set `crossorigin` attribute                               |
+| Options            | Type                                    | Description                                                                                                                                                                                         |
+| ------------------ | --------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `enabled`          | `boolean`                               | Controls if the matomo script should be loaded                                                                                                                                                      |
+| `host`             | `string`                                | Url to your matomo installation                                                                                                                                                                     |
+| `siteId`           | `number`                                | Matomo site id.                                                                                                                                                                                     |
+| `heartBeatTimer?`  | `number`                                | If set the heart beat timer will be enabled                                                                                                                                                         |
+| `disableCookies?`  | `boolean`                               | If set cookies will be disabled                                                                                                                                                                     |
+| `preconnect?`      | `boolean`                               | Will create a preconnect link pointing to the matomo host                                                                                                                                           |
+| `setCookieDomain?` | `string`                                | Share the tracking cookie across multiple domains                                                                                                                                                   |
+| `trackerUrl?`      | `string`                                | Defaults to matomo.php                                                                                                                                                                              |
+| `srcUrl?`          | `string`                                | Defaults to matomo.js                                                                                                                                                                               |
+| `debug?`           | `boolean`                               | Activate debug mode                                                                                                                                                                                 |
+| `partytown?`       | `boolean`                               | Adds [Partytown](https://partytown.builder.io/) support. Matomo added as: `<script type="text/partytown">...</script>`                                                                              |
+| `crossOrigin?`     | `string`                                | Set `crossorigin` attribute                                                                                                                                                                         |
+| `viewTransition?`  | `boolean or { contentElement: string }` | If true Matomo works in "SPA Mode" and will track every page visit after `astro:page-load`. When you pass a selector to `contentElement` Matomo is able to track new media files, forms and content |
 
 ## Example usage
 
@@ -54,6 +55,9 @@ export default defineConfig({
       heartBeatTimer: 5,
       disableCookies: true,
       debug: false,
+      viewTransition: {
+        contentElement: "main"
+      }
     }),
   ]
 });
@@ -62,20 +66,18 @@ export default defineConfig({
 
 ## Development
 
-Make the package available in your local environment:
+Go to demo directory:
 
 ```bash
-pnpm link .
-
-npm link
+cd demo
 ```
 
-Go to the demo project and link the package:
+Go to the demo project and install the dev package:
 
 ```bash
-pnpm link astro-matomo
+pnpm install
 
-npm link astro-matomo
+npm install
 ```
 
 Start the dev server:
