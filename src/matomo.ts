@@ -45,6 +45,46 @@ export function initMatomo(options: MatomoOptions): void {
     g.src = u + (options?.srcUrl || "matomo.js");
     if (s.parentNode != null && u) s.parentNode.insertBefore(g, s);
   })();
+
+  if (options?.viewTransition) {
+    spaMode(options);
+  }
+}
+
+/**
+ * Single Page Application and Progressive Web App mode
+ *
+ * @param   {MatomoOptions}  options
+ * @see https://developer.matomo.org/guides/spa-tracking
+ *
+ * @return  {void}
+ */
+export function spaMode(options: MatomoOptions): void {
+  let currentUrl = document.referrer;
+
+  document.addEventListener("astro:page-load", () => {
+    const _paq = (window._paq = window._paq || []);
+    _paq.push(["setReferrerUrl", currentUrl]);
+    currentUrl = window.location.href;
+    _paq.push(["setCustomUrl", currentUrl]);
+    _paq.push(["setDocumentTitle", document.title]);
+    _paq.push(["deleteCustomVariables", "page"]);
+    _paq.push(["deleteCustomDimension", 1]);
+    _paq.push(["trackPageView"]);
+
+    if (
+      typeof options?.viewTransition === "object" &&
+      options?.viewTransition
+    ) {
+      const content = document.querySelector(
+        options?.viewTransition?.contentElement
+      );
+      _paq.push(["MediaAnalytics::scanForMedia", content]);
+      _paq.push(["FormAnalytics::scanForForms", content]);
+      _paq.push(["trackContentImpressionsWithinNode", content]);
+    }
+    _paq.push(["enableLinkTracking"]);
+  });
 }
 
 /**

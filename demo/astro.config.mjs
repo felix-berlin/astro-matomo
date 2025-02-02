@@ -10,9 +10,10 @@ export default defineConfig({
       host: "https://analytics.webshaped.de/",
       setCookieDomain: "*.localhost",
       siteId: 9,
-      debug: true,
+      debug: false,
       heartBeatTimer: 5,
       preconnect: true,
+      viewTransition: true,
     }),
   ],
 });
