@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.8.1](https://github.com/felix-berlin/astro-matomo/compare/v1.8.0...v1.8.1) (2025-04-07)
+
+
+### Bug Fixes
+
+* **spa mode:** tracking was triggered twice on init ([dc724a6](https://github.com/felix-berlin/astro-matomo/commit/dc724a69f9657ede11970b879e506f82a62b42cb))
+* **types:** missing option crossorigin ([a179477](https://github.com/felix-berlin/astro-matomo/commit/a17947756f884a893dbb8251771e4c982cc1a606))
+
 # [1.8.0](https://github.com/felix-berlin/astro-matomo/compare/v1.7.0...v1.8.0) (2025-02-02)
 
 
