@@ -62,7 +62,7 @@ export function initMatomo(options: MatomoOptions): void {
 export function spaMode(options: MatomoOptions): void {
   let currentUrl = document.referrer;
 
-  document.addEventListener("astro:page-load", () => {
+  document.addEventListener("astro:after-swap", () => {
     const _paq = (window._paq = window._paq || []);
     _paq.push(["setReferrerUrl", currentUrl]);
     currentUrl = window.location.href;
