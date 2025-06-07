@@ -1,4 +1,4 @@
-import type { MatomoOptions } from "./index.js";
+import type { MatomoOptions } from "./index.ts";
 
 /**
  * Init Matomo
