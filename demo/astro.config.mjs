@@ -14,6 +14,7 @@ export default defineConfig({
       heartBeatTimer: 5,
       preconnect: true,
       viewTransition: true,
+      // customSrcUrl: "/js/matomo.js"
     }),
   ],
 });
