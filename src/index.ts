@@ -7,6 +7,7 @@ export type MatomoOptions =
       siteId: number;
       trackerUrl?: string;
       srcUrl?: string;
+      customSrcUrl?: string;
       heartBeatTimer?: number;
       setCookieDomain?: string;
       disableCookies?: boolean;
