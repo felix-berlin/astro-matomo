@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.9.0](https://github.com/felix-berlin/astro-matomo/compare/v1.8.2...v1.9.0) (2025-06-09)
+
+
+### Features
+
+* add support for customSrcUrl to override Matomo script source ([f787aac](https://github.com/felix-berlin/astro-matomo/commit/f787aac514a7f8a385bb38105a96120a4a4eb884))
+
 ## [1.8.2](https://github.com/felix-berlin/astro-matomo/compare/v1.8.1...v1.8.2) (2025-06-09)
 
 
