@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.8.2](https://github.com/felix-berlin/astro-matomo/compare/v1.8.1...v1.8.2) (2025-06-09)
+
+
+### Bug Fixes
+
+* correct import type extension to .ts ([a267637](https://github.com/felix-berlin/astro-matomo/commit/a267637f7a4818c43c85c93507aed5e20f2d76fd))
+
 ## [1.8.1](https://github.com/felix-berlin/astro-matomo/compare/v1.8.0...v1.8.1) (2025-04-07)
 
 
