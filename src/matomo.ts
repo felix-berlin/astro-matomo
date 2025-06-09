@@ -42,7 +42,7 @@ export function initMatomo(options: MatomoOptions): void {
     g.type = `text/${options?.partytown ? "partytown" : "javascript"}`;
     g.async = true;
     g.defer = true;
-    g.src = ( options?.customSrcUrl || (u + (options?.srcUrl || "matomo.js")));
+    g.src = options?.customSrcUrl || u + (options?.srcUrl || "matomo.js");
     if (s.parentNode != null && u) s.parentNode.insertBefore(g, s);
   })();
 
