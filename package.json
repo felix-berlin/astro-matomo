@@ -41,11 +41,11 @@
     "url": "https://github.com/felix-berlin/astro-matomo/issues"
   },
   "scripts": {
-    "release": "semantic-release --branches main"
+    "release": "semantic-release"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/felix-berlin/astro-matomo.git"
+    "url": "https://github.com/felix-berlin/astro-matomo.git"
   },
   "workspaces": [
     "demo"
@@ -53,7 +53,7 @@
   "devDependencies": {
     "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/git": "^10.0.1",
-    "semantic-release": "^25.0.0"
+    "semantic-release": "^25.0.2"
   },
   "peerDependencies": {
     "astro": "^2.0.0-beta.0 || ^3.0.0 || ^4.0.0 || ^5.0.0"
