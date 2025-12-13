@@ -12,6 +12,6 @@
   },
   "dependencies": {
     "astro": "^5.16.5",
-    "astro-matomo": "file:.."
+    "astro-matomo": "workspace:*"
   }
 }
