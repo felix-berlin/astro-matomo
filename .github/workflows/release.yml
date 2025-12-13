@@ -1,4 +1,8 @@
 name: Release
+
+permissions:
+  contents: read
+
 on:
   push:
     branches:
@@ -8,6 +12,11 @@ jobs:
   release:
     name: Release
     runs-on: ubuntu-latest
+    permissions:
+      contents: write # to be able to publish a GitHub release
+      issues: write # to be able to comment on released issues
+      pull-requests: write # to be able to comment on released pull requests
+      id-token: write # to enable use of OIDC for trusted publishing and npm provenance
     steps:
       - name: Checkout ✅
         uses: actions/checkout@v6
@@ -22,8 +31,6 @@ jobs:
 
       - name: Setup pnpm 🛠️
         uses: pnpm/action-setup@v4
-        with:
-          version: 10
 
       - name: Install dependencies
         run: pnpm i --ignore-scripts
@@ -31,5 +38,4 @@ jobs:
       - name: Release 🚀
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-        run: npx semantic-release
+        run: pnpm run release
