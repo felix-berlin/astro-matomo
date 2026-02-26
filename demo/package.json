@@ -11,7 +11,7 @@
     "preinstall": "npx only-allow pnpm"
   },
   "dependencies": {
-    "astro": "^5.16.5",
+    "astro": "6.0.0-beta.15",
     "astro-matomo": "workspace:*"
   }
 }
