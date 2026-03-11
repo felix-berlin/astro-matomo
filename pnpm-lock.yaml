@@ -20,15 +20,16 @@ importers:
 
   demo:
     dependencies:
-      '@astrojs/check':
-        specifier: ^0.9.7
-        version: 0.9.7(prettier@3.8.1)(typescript@5.9.3)
       astro:
         specifier: ^6.0.3
         version: 6.0.3(@types/node@22.15.30)(rollup@4.59.0)(typescript@5.9.3)(yaml@2.8.2)
       astro-matomo:
         specifier: workspace:*
         version: link:../packages/astro-matomo
+    devDependencies:
+      '@astrojs/check':
+        specifier: ^0.9.7
+        version: 0.9.7(prettier@3.8.1)(typescript@5.9.3)
       typescript:
         specifier: ^5.9.3
         version: 5.9.3

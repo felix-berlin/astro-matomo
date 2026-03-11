@@ -7,13 +7,16 @@
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
+    "check": "astro check",
     "astro": "astro",
     "preinstall": "npx only-allow pnpm"
   },
   "dependencies": {
-    "@astrojs/check": "^0.9.7",
     "astro": "^6.0.3",
-    "astro-matomo": "workspace:*",
+    "astro-matomo": "workspace:*"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.7",
     "typescript": "^5.9.3"
   }
 }
