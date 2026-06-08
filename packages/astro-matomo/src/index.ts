@@ -1,5 +1,7 @@
 import type { AstroIntegration } from "astro";
 
+export type MatomoCommand = [string, ...unknown[]];
+
 export type MatomoOptions =
   | {
       enabled: boolean;
@@ -11,6 +13,7 @@ export type MatomoOptions =
       heartBeatTimer?: number;
       setCookieDomain?: string;
       disableCookies?: boolean;
+      preInitCommands?: MatomoCommand[];
       preconnect?: boolean;
       debug?: boolean;
       partytown?: boolean;

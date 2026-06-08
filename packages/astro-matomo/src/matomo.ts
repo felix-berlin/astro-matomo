@@ -11,6 +11,7 @@ export function initMatomo(options: MatomoOptions): void {
   const _paq = (window._paq = window._paq || []);
 
   /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  options?.preInitCommands?.forEach((command) => _paq.push(command));
   if (options?.disableCookies) _paq.push(["disableCookies"]);
   if (options?.heartBeatTimer)
     _paq.push(["enableHeartBeatTimer", options.heartBeatTimer]);
