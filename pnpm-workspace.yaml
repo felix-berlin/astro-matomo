@@ -1,3 +1,6 @@
 packages:
   - "demo"
   - "packages/*"
+allowBuilds:
+  esbuild: true
+  sharp: true

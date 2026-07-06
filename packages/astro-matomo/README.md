@@ -33,7 +33,7 @@ yarn add astro-matomo
 | `debug?`           | `boolean`                               | Activate debug mode                                                                                                                                                                                 |
 | `partytown?`       | `boolean`                               | Adds [Partytown](https://partytown.builder.io/) support. Matomo added as: `<script type="text/partytown">...</script>`                                                                              |
 | `crossOrigin?`     | `string`                                | Set `crossorigin` attribute                                                                                                                                                                         |
-| `viewTransition?`  | `boolean or { contentElement: string }` | If true Matomo works in "SPA Mode" and will track every page visit after `astro:page-load`. When you pass a selector to `contentElement` Matomo is able to track new media files, forms and content |
+| `viewTransition?`  | `boolean or { contentElement?: string, deleteCustomDimensions?: number[] }` | If true Matomo works in "SPA Mode" and will track every page visit after `astro:page-load`. When you pass a selector to `contentElement` Matomo is able to track new media files, forms and content. Custom dimension ids listed in `deleteCustomDimensions` are deleted on every navigation (useful for page-scoped dimensions that should not leak into the next page view) |
 
 ## Example usage
 
@@ -59,7 +59,9 @@ export default defineConfig({
       preInitCommands: [["requireCookieConsent"]],
       debug: false,
       viewTransition: {
-        contentElement: "main"
+        contentElement: "main",
+        // Optional: delete page-scoped custom dimensions on every navigation
+        deleteCustomDimensions: [2, 3]
       }
     }),
   ]
