@@ -15,7 +15,9 @@ export type MatomoOptions =
       debug?: boolean;
       partytown?: boolean;
       crossOrigin?: string;
-      viewTransition?: boolean | { contentElement: string };
+      viewTransition?:
+        | boolean
+        | { contentElement?: string; deleteCustomDimensions?: number[] };
     }
   | undefined;
 

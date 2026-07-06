@@ -61,6 +61,10 @@ export function initMatomo(options: MatomoOptions): void {
  */
 export function spaMode(options: MatomoOptions): void {
   let currentUrl = document.referrer;
+  const viewTransition =
+    typeof options?.viewTransition === "object"
+      ? options.viewTransition
+      : undefined;
 
   document.addEventListener("astro:after-swap", () => {
     const _paq = (window._paq = window._paq || []);
@@ -69,16 +73,13 @@ export function spaMode(options: MatomoOptions): void {
     _paq.push(["setCustomUrl", currentUrl]);
     _paq.push(["setDocumentTitle", document.title]);
     _paq.push(["deleteCustomVariables", "page"]);
-    _paq.push(["deleteCustomDimension", 1]);
+    for (const dimensionId of viewTransition?.deleteCustomDimensions ?? []) {
+      _paq.push(["deleteCustomDimension", dimensionId]);
+    }
     _paq.push(["trackPageView"]);
 
-    if (
-      typeof options?.viewTransition === "object" &&
-      options?.viewTransition
-    ) {
-      const content = document.querySelector(
-        options?.viewTransition?.contentElement
-      );
+    if (viewTransition?.contentElement) {
+      const content = document.querySelector(viewTransition.contentElement);
       _paq.push(["MediaAnalytics::scanForMedia", content]);
       _paq.push(["FormAnalytics::scanForForms", content]);
       _paq.push(["trackContentImpressionsWithinNode", content]);
