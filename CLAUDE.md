@@ -55,4 +55,4 @@ Uses semantic-release with conventional commits. Releases publish to npm and cre
 
 ## Peer dependency support
 
-Must remain compatible with astro `^2 || ^3 || ^4 || ^5 || ^6`. Avoid APIs introduced after Astro 2.
+Must remain compatible with astro `^2 || ^3 || ^4 || ^5 || ^6 || ^7`. Avoid APIs introduced after Astro 2.
