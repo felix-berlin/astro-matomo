@@ -5,6 +5,10 @@ import type { MatomoOptions } from "./index.ts";
  *
  * @param   {MatomoOptions}  options
  *
+ * @remarks preInitCommands values pass through JSON.stringify before
+ * injection — non-serializable values (functions, RegExp, Date, ...)
+ * silently become null at runtime.
+ *
  * @return  {void}
  */
 export function initMatomo(options: MatomoOptions): void {
