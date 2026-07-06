@@ -24,6 +24,7 @@ yarn add astro-matomo
 | `siteId`           | `number`                                | Matomo site id.                                                                                                                                                                                     |
 | `heartBeatTimer?`  | `number`                                | If set the heart beat timer will be enabled                                                                                                                                                         |
 | `disableCookies?`  | `boolean`                               | If set cookies will be disabled                                                                                                                                                                     |
+| `preInitCommands?` | `Array<[string, ...unknown[]]>`         | Matomo `_paq` commands pushed before default tracking commands. Use for calls like `requireCookieConsent`.                                                                                          |
 | `preconnect?`      | `boolean`                               | Will create a preconnect link pointing to the matomo host                                                                                                                                           |
 | `setCookieDomain?` | `string`                                | Share the tracking cookie across multiple domains                                                                                                                                                   |
 | `trackerUrl?`      | `string`                                | Defaults to matomo.php                                                                                                                                                                              |
@@ -55,6 +56,7 @@ export default defineConfig({
       siteId: 666,
       heartBeatTimer: 5,
       disableCookies: true,
+      preInitCommands: [["requireCookieConsent"]],
       debug: false,
       viewTransition: {
         contentElement: "main",
