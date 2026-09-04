@@ -12,7 +12,7 @@
     "preinstall": "npx only-allow pnpm"
   },
   "dependencies": {
-    "astro": "^7.0.6",
+    "astro": "^2.10.12",
     "astro-matomo": "workspace:*"
   },
   "devDependencies": {
